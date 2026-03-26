@@ -1,0 +1,23 @@
+# ============================================================
+# content/example_student.yaml
+# ============================================================
+# This is an example student profile. Copy this file to
+# something like content/my_profile.yaml, fill in your own
+# information, and update portfolio_config.yaml to point to it.
+# ============================================================
+
+name: "Jake Roll"
+tagline: "Aspiring Data Scientist | MSU Data Science Student"
+
+about: |
+  I am a dedicated data analytics student at Michigan State University with a strong
+  interest in applying data‑driven insights to real‑world problems. With a solid foundation in R and
+  Python, I am passionate about leveraging data to uncover insights and support informed
+  decision‑making. My primary focus is sports analytics, where I combine my love for sports
+  with my data science training to identify trends and enhance performance. I am eager 
+  to apply my skills and contribute to impactful, analytics‑driven projects.
+
+# Contact information — remove any fields you prefer not to share
+email: "rolljake@msu.edu"
+linkedin: "https://www.linkedin.com/in/jake-roll"
+github: "https://github.com/JakeRoll04"
