@@ -197,6 +197,85 @@ to apply my skills and contribute to impactful, analytics‑driven projects.</p>
 
     </article>
     
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/confusion_matrix.png"
+          alt="Thumbnail for Predicting NYC 311 Complaint Resolution Time Using AWS SageMaker"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">Predicting NYC 311 Complaint Resolution Time Using AWS SageMaker</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">Developed a machine learning pipeline on AWS to predict how long NYC 311 service requests will take to resolve. Built end-to-end workflow using Athena, S3, and SageMaker Linear Learner, transforming raw complaint data into a structured modeling dataset for scalable training.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">scikit-learn</span>
+          
+          <span class="tech-badge">AWS S3</span>
+          
+          <span class="tech-badge">AWS Athena</span>
+          
+          <span class="tech-badge">AWS SageMaker (Linear Learner)</span>
+          
+          <span class="tech-badge">SQL</span>
+          
+          <span class="tech-badge">Jupyter Notebooks</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>NYC 311 receives thousands of service requests daily, but resolution times vary widely depending on agency, location, and request type. The goal of this project was to predict the number of days required to resolve a complaint at the time it is submitted, enabling better resource planning and expectation management.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Queried raw complaint data from AWS Athena and stored datasets in S3. Cleaned and transformed the data into a modeling-ready format, including handling missing values and encoding categorical variables (agency, borough, complaint type). Engineered time-based features such as day of week and hour of day, as well as operational features like same-day complaint volume. Converted the target variable (days_to_close) into both regression and binary classification formats. Prepared data according to SageMaker requirements (label-first, no headers, numeric-only) and trained a Linear Learner model using S3-hosted training data.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>The model successfully captured patterns in resolution time based on agency workload and temporal features. Results demonstrated that simple linear models can perform effectively when features are carefully engineered and properly formatted for scalable systems. The project highlighted the importance of data preprocessing and cloud-based workflows for handling large datasets, as well as the tradeoffs between model simplicity and interpretability in production environments.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/JakeRoll04/aws-nyc311-rolljake" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+          <a href="https://github.com/JakeRoll04/aws-nyc311-rolljake/blob/main/notebooks/stakeholder_question02_linear_learner-STUDENT.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+            View Notebook
+          </a>
+          
+        </div>
+      </div>
+
+    </article>
+    
   </div>
 </section>
 
