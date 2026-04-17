@@ -1,0 +1,55 @@
+# ============================================================
+# content/projects/example_project_2.yaml
+# ============================================================
+# Example project: Crowd Cheer Analysis at Spartan Football Games
+# Copy this file to create your own project entries.
+# ============================================================
+
+title: "Predicting NYC 311 Complaint Resolution Time Using AWS SageMaker"
+
+short_summary: >
+  Developed a machine learning pipeline on AWS to predict how long NYC 311
+  service requests will take to resolve. Built end-to-end workflow using
+  Athena, S3, and SageMaker Linear Learner, transforming raw complaint
+  data into a structured modeling dataset for scalable training.
+
+tech_stack:
+  - Python
+  - pandas
+  - scikit-learn
+  - AWS S3
+  - AWS Athena
+  - AWS SageMaker (Linear Learner)
+  - SQL
+  - Jupyter Notebooks
+
+problem_statement: >
+  NYC 311 receives thousands of service requests daily, but resolution
+  times vary widely depending on agency, location, and request type.
+  The goal of this project was to predict the number of days required
+  to resolve a complaint at the time it is submitted, enabling better
+  resource planning and expectation management.
+
+approach: >
+  Queried raw complaint data from AWS Athena and stored datasets in S3.
+  Cleaned and transformed the data into a modeling-ready format, including
+  handling missing values and encoding categorical variables (agency,
+  borough, complaint type). Engineered time-based features such as day of
+  week and hour of day, as well as operational features like same-day
+  complaint volume. Converted the target variable (days_to_close) into both
+  regression and binary classification formats. Prepared data according to
+  SageMaker requirements (label-first, no headers, numeric-only) and trained
+  a Linear Learner model using S3-hosted training data.
+
+results_impact: >
+  The model successfully captured patterns in resolution time based on
+  agency workload and temporal features. Results demonstrated that simple
+  linear models can perform effectively when features are carefully
+  engineered and properly formatted for scalable systems. The project
+  highlighted the importance of data preprocessing and cloud-based
+  workflows for handling large datasets, as well as the tradeoffs between
+  model simplicity and interpretability in production environments.
+
+repo_url: "https://github.com/JakeRoll04/aws-nyc311-rolljake"
+notebook_url: "https://github.com/JakeRoll04/aws-nyc311-rolljake/blob/main/notebooks/stakeholder_question02_linear_learner-STUDENT.ipynb"
+image_path: "img/confusion_matrix.png"
